@@ -103,6 +103,7 @@ db.students.aggregate([
     },
 
 ])
+
 // 17) Знайти найуспішніший клас
 db.students.aggregate([
     {
