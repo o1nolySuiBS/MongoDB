@@ -91,6 +91,7 @@ db.students.aggregate([
         $set:{avgScore: 5}
     }
 ])
+
 // 16) Знайти дітей які вчаться в початковій школі (до 5 класу) і вивчають фізику ( physics )
 db.students.aggregate([
     {
@@ -103,6 +104,7 @@ db.students.aggregate([
     },
 
 ])
+
 
 // 17) Знайти найуспішніший клас
 db.students.aggregate([
