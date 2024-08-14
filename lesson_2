@@ -66,11 +66,13 @@ db.students.aggregate([
     {
         $unwind: "$parents" // Розгорнути масив батьків
     },
+
     {
         $match: {
              'parents.profession': { $exists: false }
         }
     },
+
     {
         $project: {
             _id: 0,
