@@ -44,6 +44,7 @@ db.students.aggregate([
         $match: {class: 2}
     },
     {
+
         $group: {
             _id: null,
             avg: { $avg: "$avgScore" }
@@ -53,6 +54,7 @@ db.students.aggregate([
 // 12) Знайти дітей з не повною сім'єю
 db.students.aggregate([
     {
+
         $match: {
             $or: [
                 { parents: { $exists: false } },
